@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Work+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="col-xs-12 header_div text-center">
+      <h2> Sound-Controlled Animals </h2>
+      <p> Note: Play different sounds like barking, meowing, roaring, mooing </p>
+    </div>
+    <div class="main_div">
+      <center>
+      <br>
+      <h3 id="sound-name"> I can hear - </h3>
+      <br>
+      <h4 id="confidence"> Accuracy - </h4>
+      <br>
+      <h4 id="name_of_animal"></h4>
+      <br>
+      <img src="cat.jpg" id="cat" width="300" height="300">
+      <img src="cow.png" id="cow" width="300" height="300">
+      <img src="lion.png" id="lion" width="300" height="300">
+      <img src="dog.jpg" id="dog" width="300" height="300">
+      <br>
+      <button onclick="Compare()" class="btn btn-warning"> Start </button>
+      </center>
+    </div>
+    <div class="Copyright_Footer"> Developed By Subhomit Das </div>
+<script src="main.js"></script>
+  </body>
+</html>
